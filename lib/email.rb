@@ -4,7 +4,7 @@ class String
   @@gifs = []
 
   def exclamations
-    self.gsub(".", "!").gsub("?", "?!")
+    self.gsub("!", "!!!!!!").(".", "!").gsub("?", "?!")
   end
 
   def all_caps
@@ -13,7 +13,7 @@ class String
     num.times do |sentence|
       sentences[rand(num-1)].upcase!
     end
-    sentences
+    sentences.join
   end
 
   def wrap_it
