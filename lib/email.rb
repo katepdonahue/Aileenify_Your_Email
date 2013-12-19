@@ -11,8 +11,9 @@ class String
     sentences = self.split("!")
     num = rand(1..sentences.size)
     num.times do |sentence|
-      sentences[rand(num-1)]
+      sentences[rand(num-1)].upcase!
     end
+    sentences
   end
 
   def wrap_it
