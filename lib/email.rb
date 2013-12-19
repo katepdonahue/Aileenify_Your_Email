@@ -9,6 +9,7 @@ class String
 
   def all_caps
     sentences = self.split("!")
+    rand(sentences.size)
   end
 
   def wrap_it
