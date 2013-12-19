@@ -12,18 +12,6 @@ p {
 	padding: 20px;
 }
 
-.box {
-	height: 300px;
-	width: 300px;
-	margin: auto;
-	margin-top: 10%;
-	background-color: white;
-	-webkit-border-radius: 20px 20px 20px 20px; 
-    -moz-border-radius: 20px 20px 20px 20px;
-    -o-border-radius: 20px 20px 20px 20px;
-    border-radius: 20px 20px 20px 20px;
-}
-
 .big_box {
 	height: 600px;
 	width: 600px;
