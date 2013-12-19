@@ -3,8 +3,12 @@ class String
   @@endings = []
   @@gifs = []
 
-  def aileenify
-    aileen_mail = @@greeting.sample + "\n" + self + "\n" + @@ending.sample
+  def exclamations
+    self.gsub(".", "!")
+  end
+
+  def wrap_it
+    @@greeting.sample + "\n" + self + "\n" + @@ending.sample
   end
 
 end
