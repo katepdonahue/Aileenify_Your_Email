@@ -4,7 +4,11 @@ class String
   @@gifs = []
 
   def exclamations
-    self.gsub(".", "!")
+    self.gsub(".", "!").gsub("?", "?!")
+  end
+
+  def all_caps
+    sentences = self.split("!")
   end
 
   def wrap_it
