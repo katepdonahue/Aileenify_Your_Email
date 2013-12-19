@@ -1,5 +1,5 @@
 body {
-	background-color: gray;
+	background-color: gold;
 	font-family: 'Droid Sans Mono', sans-serif;
 }
 
@@ -24,57 +24,6 @@ p {
     border-radius: 40px 40px 40px 40px;
 }
 
-.text {
-	margin: auto;
-}
-
-a {
-	text-decoration: none;
-	color: gray;
-}
-
-ul {
-	list-style-type: none;
-	text-align: center;
-	padding: 0;
-	padding-top: 40px;
-}
-
-li {
-	padding-bottom: 20px;
-	font-size: 20px;
-}
-
-.projects {
-	margin-top: 60px;
-}
-
-.list {
-	width: 300px;
-	margin-left: auto;
-	margin-right: auto;
-	overflow: auto;
-}
-
-.social {
-	float: left;
-}
-
-.proffessional {
-	float: right;
-}
-
-#nav1 {
-	float: right;
-	margin-top: 95px;
-	margin-right: 40px;
-}
-
-#nav2 {
-	float: right;
-	margin-top: 137px;
-	margin-right: 40px;
-}
 
 
 
