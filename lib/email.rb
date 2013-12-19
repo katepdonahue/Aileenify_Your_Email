@@ -1,8 +1,10 @@
-class Email
-  attr_reader :email
+class String
+  @@greetings = []
+  @@endings = []
+  @@gifs = []
 
-  def initialize(email)
-    @email = email
+  def aileenify
+    aileen_mail = @@greeting.sample + "\n" + self + "\n" + @@ending.sample
   end
 
 end
