@@ -9,7 +9,10 @@ class String
 
   def all_caps
     sentences = self.split("!")
-    rand(sentences.size)
+    num = rand(1..sentences.size)
+    num.times do |sentence|
+      sentences[rand(num-1)]
+    end
   end
 
   def wrap_it
