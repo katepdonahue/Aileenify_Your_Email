@@ -31,7 +31,11 @@ textarea {
 }
 
 form {
-	padding: 0 150px;
+	padding: 40px 153px 0 147px;
+}
+
+button {
+	margin: 20px 90px;
 }
 
 
