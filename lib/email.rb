@@ -2,6 +2,7 @@ class String
   @@greetings = []
   @@endings = []
   @@gifs = []
+  @@lols = []
 
   def exclamations
     self.gsub("!", "!!!!!!").(".", "!").gsub("?", "?!")
@@ -14,6 +15,10 @@ class String
       sentences[rand(num-1)].upcase!
     end
     sentences.join
+  end
+
+  def lol
+    self + @@lols.sample
   end
 
   def wrap_it
