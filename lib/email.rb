@@ -28,7 +28,7 @@ class String
 
   def byeeee
     last = /([a-z])[^a-z]?\s*\z/.match(self)[1]# make sure this is the last letter
-    "#{self}#{last*5}"
+    self.gsub(/(?<=[a-z])(?=[^a-z]?\s*\z)/, last*5)
   end
 
   def wrap_it
