@@ -1,4 +1,5 @@
 class String
+  attr_reader :used
   @@greetings = ["ALSO I JUST MADE A HILARIOUS JOKE", "WAHOOOOO", "FUTURISTIC SHIT!!!!!!!", "WTF THIS LOOKS AWESOME", 
                  "WHADDUP", "YEAAAAAH???", "LOL", "OMGOMGOMGOMG", "IS THERE ANY WAY WE CAN GHOST RIDE THE WHIP THIS WEEKEND",
                  "Dis is crazy", "LOLOLOLOL OMG I JUST DIED", 
@@ -10,8 +11,21 @@ class String
                 "OKAY BYE BITCHES", "you're welcome you lazy fucks/n<3<3<3<3  ;)"]
   @@gifs = []
   @@lols = [" DA FUCK!", " ALSO,", " OMG", " OMGGGGGGG", " LOLLERZZZ", " WTF!!", " I LOLLED AT MYSELF FOR LIKE 5 MIN",
-            " FUUUUUUUUCK", " LOLOLOLOLOLOL HAHAHAHHAHAHAHAHAHAHAHAHA", " wtfffffff", " fuuuuuuuuuck", " ALSO", "HAHAHAHAHA",
-             "ALL I WANT TO DO IS PUT ON MY SLEEP SHORTS AND LAY IN MY BED AND EAT THAI FOOD.", "lolled so hard in the bathroom (yea i check my emails while i pee)", "lulllz"]
+            " FUUUUUUUUCK", " LOLOLOLOLOLOL HAHAHAHHAHAHAHAHAHAHAHAHA", " wtfffffff", " fuuuuuuuuuck", " ALSO", " HAHAHAHAHA",
+             " (all I want to do is lay in my bed and EAT THAI FOOD).", " lolled so hard in the bathroom (yea i check my emails while i pee)", "lulllz"]
+
+  def initialize
+    @used = []
+  end
+
+  def pick(array)
+    my_choice = array.sample
+    while used.include? my_choice
+      my_choice = array.sample
+    end
+    used << my_choice
+    my_choice
+  end
 
   def exclamations
     self.gsub("!", "!!!!!!").gsub(".", "!").gsub("?", "?!")
@@ -30,10 +44,12 @@ class String
     sentences = self.split("!")
     num = rand(1..sentences.size)
     num.times do
-      sentences[rand(num-1)] + @@lols.sample
+      sentences[rand(num-1)] << pick(@@lols)
     end
     sentences.join("!")
   end
+
+
 
   def byeeee
     last = /([a-z])[^a-z]?\s*\z/.match(self)[1]# make sure this is the last letter
@@ -44,8 +60,12 @@ class String
     "#{@@greetings.sample}\n#{self}\n#{@@endings.sample}"
   end
 
+  def array_it
+    split("\n")
+  end
+
   def aileenify
-    self.exclamations.all_caps.lol.byeeee.wrap_it
+    self.exclamations.all_caps.lol.byeeee.wrap_it.array_it
   end
 
 end
