@@ -5,29 +5,33 @@ class String
   @@lols = [" DA FUCK!", " ALSO,", " OMG", " OMGGGGGGG", " LOLLERZZZ", " WTF!!", " I LOLLED AT MYSELF FOR LIKE 5 MIN", " FUUUUUUUUCK", " LOLOLOLOLOLOL HAHAHAHHAHAHAHAHAHAHAHAHA", " wtfffffff", " fuuuuuuuuuck", " ALSO"]
 
   def exclamations
-    self.gsub("!", "!!!!!!").(".", "!").gsub("?", "?!")
+    self.gsub("!", "!!!!!!").gsub(".", "!").gsub("?", "?!")
   end
 
   def all_caps
     sentences = self.split("!")
     num = rand(1..sentences.size)
-    num.times do |sentence|
+    num.times do
       sentences[rand(num-1)].upcase!
-      sentence.lol
     end
-    sentences.join
+    sentences.join("!")
   end
 
   def lol
-    self + @@lols.sample
+    sentences = self.split("!")
+    num = rand(1..sentences.size)
+    num.times do
+      sentences[rand(num-1)] + @@lols.sample
+    end
+    sentences.join("!")
   end
 
   def wrap_it
-    @@greeting.sample + "\n" + self + "\n" + @@ending.sample
+    @@greetings.sample + "\n" + self + "\n" + @@endings.sample
   end
 
   def aileenify
-    self.exclamations.all_caps.wrap_it
+    self.exclamations.all_caps.lol.wrap_it
   end
 
 end

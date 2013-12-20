@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require
+require './lib/email'
 
 
 class App < Sinatra::Application
@@ -8,9 +9,9 @@ class App < Sinatra::Application
     erb :index
   end
 
-  post '/' do
-    @output = params["email"].aileenify
-    erb :index
+  post '/aileen' do
+    @output = params["email"]
+    erb :results
   end
  
 end
