@@ -1,8 +1,17 @@
 class String
-  @@greetings = ["ALSO I JUST MADE A HILARIOUS JOKE", "WAHOOOOO", "FUTURISTIC SHIT!!!!!!!", "WTF THIS LOOKS AWESOME", "Dis is crazy", "LOLOLOLOL OMG I JUST DIED"]
-  @@endings = ["DONT YOU LOVE ME!!!", "OMG WHAT IS THIS", "lolololz", "I FELL LIKE I HAVENT SEEN YOU IN 5EVAH", "FUCK YOU BABY BUSTER"]
+  @@greetings = ["ALSO I JUST MADE A HILARIOUS JOKE", "WAHOOOOO", "FUTURISTIC SHIT!!!!!!!", "WTF THIS LOOKS AWESOME", 
+                 "WHADDUP", "YEAAAAAH???", "LOL", "OMGOMGOMGOMG", "IS THERE ANY WAY WE CAN GHOST RIDE THE WHIP THIS WEEKEND",
+                 "Dis is crazy", "LOLOLOLOL OMG I JUST DIED", 
+                 "I'M STILL SO EXCITED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+                  "CANNOT WAIT"]
+  @@endings = ["DONT YOU LOVE ME!!!", "OMG WHAT IS THIS", "lolololz",
+               "I FELL LIKE I HAVENT SEEN YOU IN 5EVAH", 
+                "FUCK YOU BABY BUSTER", "THIS IS STAN\nBUT ACTUALLY THIS IS AILEEN",
+                "OKAY BYE BITCHES", "you're welcome you lazy fucks/n<3<3<3<3  ;)"]
   @@gifs = []
-  @@lols = [" DA FUCK!", " ALSO,", " OMG", " OMGGGGGGG", " LOLLERZZZ", " WTF!!", " I LOLLED AT MYSELF FOR LIKE 5 MIN", " FUUUUUUUUCK", " LOLOLOLOLOLOL HAHAHAHHAHAHAHAHAHAHAHAHA", " wtfffffff", " fuuuuuuuuuck", " ALSO"]
+  @@lols = [" DA FUCK!", " ALSO,", " OMG", " OMGGGGGGG", " LOLLERZZZ", " WTF!!", " I LOLLED AT MYSELF FOR LIKE 5 MIN",
+            " FUUUUUUUUCK", " LOLOLOLOLOLOL HAHAHAHHAHAHAHAHAHAHAHAHA", " wtfffffff", " fuuuuuuuuuck", " ALSO", "HAHAHAHAHA",
+             "ALL I WANT TO DO IS PUT ON MY SLEEP SHORTS AND LAY IN MY BED AND EAT THAI FOOD.", "lolled so hard in the bathroom (yea i check my emails while i pee)", "lulllz"]
 
   def exclamations
     self.gsub("!", "!!!!!!").gsub(".", "!").gsub("?", "?!")
@@ -43,5 +52,5 @@ end
 
 
 
-# other ideas: add extra letters to words, add buzzfeed links
+# other ideas: add buzzfeed links
 # sub out some words for other words
