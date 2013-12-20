@@ -26,14 +26,22 @@ class String
     sentences.join("!")
   end
 
+  def byeeee
+    last = /([a-z])[^a-z]?\s*\z/.match(self)[1]# make sure this is the last letter
+    "#{self}#{last*5}"
+  end
+
   def wrap_it
-    @@greetings.sample + "\n" + self + "\n" + @@endings.sample
+    "#{@@greetings.sample}\n#{self}\n#{@@endings.sample}"
   end
 
   def aileenify
-    self.exclamations.all_caps.lol.wrap_it
+    self.exclamations.all_caps.lol.byeeee.wrap_it
   end
 
 end
 
+
+
 # other ideas: add extra letters to words, add buzzfeed links
+# sub out some words for other words
