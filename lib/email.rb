@@ -15,8 +15,12 @@ class String
             " FUUUUUUUUCK", " LOLOLOLOLOLOL HAHAHAHHAHAHAHAHAHAHAHAHA", " wtfffffff", " fuuuuuuuuuck", " ALSO", " HAHAHAHAHA",
              " (all I want to do is lay in my bed and EAT THAI FOOD).", " lolled so hard in the bathroom (yea i check my emails while i pee)", "lulllz"]
 
-  def pick(array)
+  def instance_var
     instance_variable_set("@used", Array.new)
+    self
+  end
+
+  def pick(array)
     my_choice = array.sample
     while used.include? my_choice
       my_choice = array.sample
@@ -50,8 +54,8 @@ class String
 
 
   def byeeee
-    last = /([a-z])[^a-z]?\s*\z/i.match(self)[1]# make sure this is the last letter
-    self.gsub(/(?<=[a-z])(?=[^a-z]?\s*\z)/i, last*5)
+    last = /([a-z])[^a-z]?*\z/i.match(self)[1]# make sure this is the last letter
+    self.gsub(/(?<=[a-z])(?=[^a-z]*\s*\z)/i, last*5)
   end
 
   def wrap_it
@@ -63,7 +67,7 @@ class String
   end
 
   def aileenify
-    self.exclamations.all_caps.lol.byeeee.wrap_it.array_it
+    self.instance_var.exclamations.all_caps.lol.byeeee.wrap_it.array_it
   end
 
 end
