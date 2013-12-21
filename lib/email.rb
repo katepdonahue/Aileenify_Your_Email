@@ -15,12 +15,7 @@ class String
             " FUUUUUUUUCK", " LOLOLOLOLOLOL HAHAHAHHAHAHAHAHAHAHAHAHA", " wtfffffff", " fuuuuuuuuuck", " ALSO", " HAHAHAHAHA",
              " (all I want to do is lay in my bed and EAT THAI FOOD).", " lolled so hard in the bathroom (yea i check my emails while i pee)", "lulllz"]
 
-  def instance_var
-    instance_variable_set("@used", Array.new)
-    self
-  end
-
-  def pick(array)
+  def pick(array, used)
     my_choice = array.sample
     while used.include? my_choice
       my_choice = array.sample
@@ -42,16 +37,14 @@ class String
     sentences.join("!")
   end
 
-  def lol
+  def lol(used)
     sentences = self.split("!")
     num = rand(1..sentences.size)
     num.times do
-      sentences[rand(num-1)] << pick(@@lols)
+      sentences[rand(num-1)] << pick(@@lols, used)
     end
     sentences.join("!")
   end
-
-
 
   def byeeee
     last = /([a-z])[^a-z]?*\z/i.match(self)[1]# make sure this is the last letter
@@ -59,7 +52,7 @@ class String
   end
 
   def wrap_it
-    "#{pick(@@greetings)}\n#{self}\n#{pick(@@endings)}"
+    "#{@@greetings.sample}\n#{self}\n#{@@endings.sample}"
   end
 
   def array_it
@@ -67,7 +60,8 @@ class String
   end
 
   def aileenify
-    self.instance_var.exclamations.all_caps.lol.byeeee.wrap_it.array_it
+    used = []
+    self.exclamations.all_caps.lol(used).byeeee.wrap_it.array_it
   end
 
 end
