@@ -10,7 +10,7 @@ class App < Sinatra::Application
   end
 
   post '/aileen' do
-    @output = params["email"]
+    @output = params["email"].aileenify
     erb :results
   end
  
