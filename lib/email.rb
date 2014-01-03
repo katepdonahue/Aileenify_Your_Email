@@ -13,7 +13,7 @@ class String
 
   @@lols = [" DA FUCK!", " ALSO,", " OMG", " OMGGGGGGG", " LOLLERZZZ", " WTF!!", " I LOLLED AT MYSELF FOR LIKE 5 MIN",
             " FUUUUUUUUCK", " LOLOLOLOLOLOL HAHAHAHHAHAHAHAHAHAHAHAHA", " wtfffffff", " fuuuuuuuuuck", " ALSO", " HAHAHAHAHA",
-             " (all I want to do is lay in my bed and EAT THAI FOOD)", " lolled so hard in the bathroom (yea i check my emails while i pee)", "lulllz"]
+             " (all I want to do is lay in my bed and EAT THAI FOOD)", " lolled so hard in the bathroom (yea i check my emails while i pee)", " lulllz"]
 
   def pick(array, used)
     my_choice = array.sample
@@ -67,6 +67,8 @@ class String
 end
 
 
-
+# what's broken:
+# doesn't alter paragraphs after the first one (besides exclamations method)
+# CSS: style italic class
 # other ideas: add buzzfeed links
 # sub out some words for other words

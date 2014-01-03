@@ -13,7 +13,7 @@ p {
 }
 
 .big_box {
-	height: 600px;
+	min-height: 600px;
 	width: 600px;
 	margin: auto;
 	margin-top: 10%;
