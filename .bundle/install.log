@@ -1,0 +1,14 @@
+# Logfile created on 2014-01-03 14:43:22 -0500 by logger.rb/36483
+I, [2014-01-03T14:43:22.881561 #12512]  INFO -- : 0:  bond (0.4.3) from /Users/katedonahue/.rvm/gems/ruby-2.0.0-p247/specifications/bond-0.4.3.gemspec
+I, [2014-01-03T14:43:22.881945 #12512]  INFO -- : 0:  tilt (1.4.1) from /Users/katedonahue/.rvm/gems/ruby-2.0.0-p247/specifications/tilt-1.4.1.gemspec
+I, [2014-01-03T14:43:22.882239 #12512]  INFO -- : 0:  haml (4.0.4) from /Users/katedonahue/.rvm/gems/ruby-2.0.0-p247/specifications/haml-4.0.4.gemspec
+I, [2014-01-03T14:43:22.882532 #12512]  INFO -- : 0:  rack (1.5.2) from /Users/katedonahue/.rvm/gems/ruby-2.0.0-p247/specifications/rack-1.5.2.gemspec
+I, [2014-01-03T14:43:22.882820 #12512]  INFO -- : 0:  rack-protection (1.5.1) from /Users/katedonahue/.rvm/gems/ruby-2.0.0-p247/specifications/rack-protection-1.5.1.gemspec
+I, [2014-01-03T14:43:22.883102 #12512]  INFO -- : 0:  rack-test (0.6.2) from /Users/katedonahue/.rvm/gems/ruby-2.0.0-p247/specifications/rack-test-0.6.2.gemspec
+I, [2014-01-03T14:43:22.883380 #12512]  INFO -- : 0:  ripl (0.7.0) from /Users/katedonahue/.rvm/gems/ruby-2.0.0-p247/specifications/ripl-0.7.0.gemspec
+I, [2014-01-03T14:43:22.883642 #12512]  INFO -- : 0:  ripl-multi_line (0.3.1) from /Users/katedonahue/.rvm/gems/ruby-2.0.0-p247/specifications/ripl-multi_line-0.3.1.gemspec
+I, [2014-01-03T14:43:22.883918 #12512]  INFO -- : 0:  ripl-rack (0.2.0) from /Users/katedonahue/.rvm/gems/ruby-2.0.0-p247/specifications/ripl-rack-0.2.0.gemspec
+I, [2014-01-03T14:43:22.884193 #12512]  INFO -- : 0:  shotgun (0.9) from /Users/katedonahue/.rvm/gems/ruby-2.0.0-p247/specifications/shotgun-0.9.gemspec
+I, [2014-01-03T14:43:22.884476 #12512]  INFO -- : 0:  sinatra (1.4.4) from /Users/katedonahue/.rvm/gems/ruby-2.0.0-p247/specifications/sinatra-1.4.4.gemspec
+I, [2014-01-03T14:43:22.884753 #12512]  INFO -- : 0:  tux (0.3.0) from /Users/katedonahue/.rvm/gems/ruby-2.0.0-p247/specifications/tux-0.3.0.gemspec
+I, [2014-01-03T14:43:22.885026 #12512]  INFO -- : 0:  bundler (1.5.0) from /Users/katedonahue/.rvm/gems/ruby-2.0.0-p247/specifications/bundler-1.5.0.gemspec
