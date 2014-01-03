@@ -6,12 +6,12 @@ require './lib/email'
 class App < Sinatra::Application
 
   get '/' do
-    erb :index
+    haml :index
   end
 
   post '/aileen' do
     @output = params["email"].aileenify
-    erb :results
+    haml :results
   end
  
 end
