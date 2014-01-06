@@ -5,9 +5,11 @@
           border-radius: $radius;
 }
 
+$font-stack: 'Droid Sans Mono', sans-serif;
+
 body {
 	background-color: gold;
-	font-family: 'Droid Sans Mono', sans-serif;
+	font-family: $font-stack;
 }
 
 h1 {
