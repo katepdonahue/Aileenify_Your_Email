@@ -68,7 +68,8 @@ end
 
 
 # what's broken:
-# doesn't alter paragraphs after the first one (besides exclamations method)
+# actually, lols array may be working there possibly with less frequency?
+# consider writing spec
 # CSS: style italic class
 # other ideas: add buzzfeed links
 # sub out some words for other words

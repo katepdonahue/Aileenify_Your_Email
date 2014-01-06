@@ -2,6 +2,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     bond (0.4.3)
+    chunky_png (1.2.9)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    fssm (0.2.10)
     haml (4.0.4)
       tilt
     rack (1.5.2)
@@ -17,6 +23,7 @@ GEM
       rack (>= 1.0)
       rack-test (>= 0.5)
       ripl (>= 0.3.5)
+    sass (3.2.13)
     shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.4.4)
@@ -34,7 +41,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  compass
   haml
+  sass
   shotgun
   sinatra
   tux
