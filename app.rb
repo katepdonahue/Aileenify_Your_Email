@@ -16,9 +16,8 @@ class App < Sinatra::Application
   end
 
   get '/css/stylesheet.css' do
-    scss :scss_file
+    scss :input
   end
-
 
 
   get '/' do

@@ -68,6 +68,8 @@ end
 
 
 # what's broken:
+# Users/katedonahue/Development/projects/sinatra_apps/aileen-speak/app.rb:3: warning: 
+# nested repeat operator ? and * was replaced with '*': /([a-z])[^a-z]?*\z/
 # actually, lols array may be working there possibly with less frequency?
 # consider writing spec
 # CSS: style italic class
