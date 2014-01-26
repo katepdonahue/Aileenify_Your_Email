@@ -1,5 +1,3 @@
-require "debugger"
-
 class String
   attr_reader :used
   @@greetings = ["ALSO I JUST MADE A HILARIOUS JOKE", "WAHOOOOO", "FUTURISTIC SHIT!!!!!!!", "WTF THIS LOOKS AWESOME", 
@@ -11,7 +9,7 @@ class String
   @@endings = ["DONT YOU LOVE ME!!!", "OMG WHAT IS THIS", "lolololz",
                "I FELL LIKE I HAVENT SEEN YOU IN 5EVAH", 
                 "FUCK YOU BABY BUSTER", "THIS IS STAN\nBUT ACTUALLY THIS IS AILEEN",
-                "OKAY BYE BITCHES", "you're welcome you lazy fucks/n<3<3<3<3  ;)"]
+                "OKAY BYE BITCHES", "you're welcome you lazy fucks\n<3<3<3<3  ;)"]
 
   @@lols = [" DA FUCK!", " ALSO,", " OMG", " OMGGGGGGG", " LOLLERZZZ", " WTF!!", " I LOLLED AT MYSELF FOR LIKE 5 MIN",
             " FUUUUUUUUCK", " LOLOLOLOLOLOL HAHAHAHHAHAHAHAHAHAHAHAHA", " wtfffffff", " fuuuuuuuuuck", " HAHAHAHAHA",
@@ -53,7 +51,7 @@ class String
   end
 
   def byeeee
-    last = /([a-z])[^a-z]*\z/i.match(self)[1]# make sure this is the last letter
+    last = /([a-z])[^a-z]*\z/i.match(self)[1]
     self.gsub(/(?<=[a-z])(?=[^a-z]*\s*\z)/i, last*5)
   end
 
@@ -67,7 +65,6 @@ class String
 
   def aileenify
     used = []
-    debugger
     self.exclamations.cos.all_caps.byeeee.lol(used).wrap_it.array_it
   end
 
