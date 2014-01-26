@@ -28,6 +28,10 @@ class String
     self.gsub("!", "!!!!!!").gsub(".", "!").gsub("?", "?!")
   end
 
+  def cos
+    self.gsub("because", "cos")
+  end
+
   def all_caps
     sentences = self.split("!")
     num = rand(1..sentences.size)
@@ -61,7 +65,7 @@ class String
 
   def aileenify
     used = []
-    self.exclamations.all_caps.lol(used).byeeee.wrap_it.array_it
+    self.exclamations.cos.all_caps.lol(used).byeeee.wrap_it.array_it
   end
 
 end
