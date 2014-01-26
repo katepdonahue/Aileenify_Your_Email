@@ -29,3 +29,7 @@ form {
 
 button {
   margin: 20px 90px; }
+
+span.italic {
+  font-style: italic;
+}
