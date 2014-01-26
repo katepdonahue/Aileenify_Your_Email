@@ -1,5 +1,3 @@
-require "debugger"
-
 class String
   attr_reader :used
   @@greetings = ["ALSO I JUST MADE A HILARIOUS JOKE", "WAHOOOOO", "FUTURISTIC SHIT!!!!!!!", "WTF THIS LOOKS AWESOME", 
