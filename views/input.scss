@@ -28,6 +28,7 @@ p {
 	margin-top: 10%;
 	background-color: white;
   @include border-radius(40px);
+  position: relative;
 }
 
 textarea {
@@ -45,6 +46,16 @@ button {
 
 span.italic {
 	font-style: italic;
+}
+
+nav {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}
+
+a {
+	text-decoration: none;
 }
 
 
