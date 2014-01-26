@@ -53,7 +53,7 @@ class String
   end
 
   def byeeee
-    last = /([a-z])[^a-z]?*\z/i.match(self)[1]# make sure this is the last letter
+    last = /([a-z])[^a-z]*\z/i.match(self)[1]# make sure this is the last letter
     self.gsub(/(?<=[a-z])(?=[^a-z]*\s*\z)/i, last*5)
   end
 
