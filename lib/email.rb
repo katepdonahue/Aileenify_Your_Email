@@ -44,10 +44,10 @@ class String
   end
 
   def lol(used)
-    sentences = self.split("!")
+    sentences = self.split(/(?<=!)(?=\s)/)
     num = rand(1..sentences.size)
     num.times do
-      sentences[rand(num-1)] << "!" + pick(@@lols, used)
+      sentences[rand(num-1)] << pick(@@lols, used)
     end
     sentences.join
   end
@@ -75,9 +75,8 @@ end
 
 
 # what's broken:
-# Users/katedonahue/Development/projects/sinatra_apps/aileen-speak/app.rb:3: warning: 
-# nested repeat operator ? and * was replaced with '*': /([a-z])[^a-z]?*\z/
-# actually, lols array may be working there possibly with less frequency?
+# write regex in exclamations so that . in .com ect. is not changed to exclamation point
+# also for ...
 # consider writing spec
 # CSS: style italic class
 # other ideas: add buzzfeed links
