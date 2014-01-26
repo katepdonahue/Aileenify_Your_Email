@@ -14,7 +14,7 @@ class String
                 "OKAY BYE BITCHES", "you're welcome you lazy fucks/n<3<3<3<3  ;)"]
 
   @@lols = [" DA FUCK!", " ALSO,", " OMG", " OMGGGGGGG", " LOLLERZZZ", " WTF!!", " I LOLLED AT MYSELF FOR LIKE 5 MIN",
-            " FUUUUUUUUCK", " LOLOLOLOLOLOL HAHAHAHHAHAHAHAHAHAHAHAHA", " wtfffffff", " fuuuuuuuuuck", " ALSO", " HAHAHAHAHA",
+            " FUUUUUUUUCK", " LOLOLOLOLOLOL HAHAHAHHAHAHAHAHAHAHAHAHA", " wtfffffff", " fuuuuuuuuuck", " HAHAHAHAHA",
              " (all I want to do is lay in my bed and EAT THAI FOOD)", " lolled so hard in the bathroom (yea i check my emails while i pee)", " lulllz"]
 
   def pick(array, used)
@@ -47,9 +47,9 @@ class String
     sentences = self.split("!")
     num = rand(1..sentences.size)
     num.times do
-      sentences[rand(num-1)] << pick(@@lols, used)
+      sentences[rand(num-1)] << "!" pick(@@lols, used)
     end
-    sentences.join("!")
+    sentences.join
   end
 
   def byeeee
