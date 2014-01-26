@@ -35,12 +35,12 @@ class String
   end
 
   def all_caps
-    sentences = self.split("!")
+    sentences = self.split(/(?<=!)(?=\s)/)
     num = rand(1..sentences.size)
     num.times do
       sentences[rand(num-1)].upcase!
     end
-    sentences.join("!") + "!"
+    sentences.join
   end
 
   def lol(used)
@@ -67,7 +67,6 @@ class String
 
   def aileenify
     used = []
-    debugger
     self.strip.exclamations.cos.all_caps.byeeee.lol(used).wrap_it.array_it
   end
 
