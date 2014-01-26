@@ -47,7 +47,7 @@ class String
     sentences = self.split("!")
     num = rand(1..sentences.size)
     num.times do
-      sentences[rand(num-1)] << "!" pick(@@lols, used)
+      sentences[rand(num-1)] << "!" + pick(@@lols, used)
     end
     sentences.join
   end
