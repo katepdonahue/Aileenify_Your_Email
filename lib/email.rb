@@ -1,3 +1,5 @@
+require "debugger"
+
 class String
   attr_reader :used
   @@greetings = ["ALSO I JUST MADE A HILARIOUS JOKE", "WAHOOOOO", "FUTURISTIC SHIT!!!!!!!", "WTF THIS LOOKS AWESOME", 
@@ -38,7 +40,7 @@ class String
     num.times do
       sentences[rand(num-1)].upcase!
     end
-    sentences.join("!")
+    sentences.join("!") + "!"
   end
 
   def lol(used)
@@ -65,7 +67,8 @@ class String
 
   def aileenify
     used = []
-    self.exclamations.cos.all_caps.lol(used).byeeee.wrap_it.array_it
+    debugger
+    self.exclamations.cos.all_caps.byeeee.lol(used).wrap_it.array_it
   end
 
 end
