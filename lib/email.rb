@@ -74,6 +74,7 @@ end
 # what's broken:
 # write regex in exclamations so that . in .com ect. is not changed to exclamation point
 # also for ...
+# make it so that the gif is found by a search term which is pulled from the email
 # consider writing spec
 # CSS: style italic class
 # other ideas: add buzzfeed links
