@@ -26,6 +26,8 @@ class App < Sinatra::Application
 
   post '/aileen' do
     @output = params["email"].aileenify
+    scrape = Scraper.new "http://www.buzzfeed.com/"
+    @link = "http://www.buzzfeed.com/#{scrape.get_links.sample}"
     haml :results
   end
  
