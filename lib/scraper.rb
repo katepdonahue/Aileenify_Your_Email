@@ -18,4 +18,8 @@ class Scraper
     links
   end
 
+  def get_gif
+    html.search(".a-gif img").first["src"]
+  end
+
 end
