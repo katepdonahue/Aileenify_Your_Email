@@ -42,3 +42,8 @@ nav {
 
 nav a {
   text-decoration: none; }
+
+img {
+  max-width: 560px;
+  margin-top: 20px;
+  margin-bottom: 50px; }
