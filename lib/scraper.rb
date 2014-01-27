@@ -19,11 +19,7 @@ class Scraper
   end
 
   def get_gif
-    gifs = []
-    html.search(".featured-tags img").each do |img|
-      gifs << img["src"]
-    end
-    gifs.sample
+    html.search(".featured-tags img")[rand(4)]["src"]
   end
 
 end
