@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'nokogiri'
+require 'debugger'
 
 class Scraper
   attr_reader :html
@@ -10,10 +11,13 @@ class Scraper
   end
 
   def get_links
-
+    links = []
+    html.search("article").map do |element|
+      link = element.search("h2 a").first["href"]
+      next if link.nil?
+      links << link
+    end
+    links
   end
 
 end
-
-my_scraper = Scraper.new("http://www.buzzfeed.com/")
-puts my_scraper.get_links
