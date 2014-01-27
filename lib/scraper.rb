@@ -1,6 +1,4 @@
 require 'open-uri'
-require 'nokogiri'
-require 'debugger'
 
 class Scraper
   attr_reader :html

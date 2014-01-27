@@ -5,6 +5,7 @@ gem "sinatra"
 gem "haml"
 gem "sass"
 gem "compass"
+gem "nokogiri"
 
 
 group :development do

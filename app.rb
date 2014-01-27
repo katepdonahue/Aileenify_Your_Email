@@ -1,7 +1,7 @@
 require 'bundler'
 Bundler.require
 require './lib/email'
-
+require './lib/scraper'
 
 class App < Sinatra::Application
 
