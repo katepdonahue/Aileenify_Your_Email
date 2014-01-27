@@ -8,18 +8,22 @@ class Scraper
     @html = Nokogiri::HTML(download)
   end
 
-  def get_links
+  def get_link
     links = []
     html.search("article").map do |element|
       link = element.search("h2 a").first["href"]
       next if link.nil?
       links << link
     end
-    links
+    links.sample
   end
 
   def get_gif
-    html.search(".a-gif img").first["src"]
+    gifs = []
+    html.search(".featured-tags img").each do |img|
+      gifs << img["src"]
+    end
+    gifs.sample
   end
 
 end
