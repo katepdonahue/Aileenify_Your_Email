@@ -1,6 +1,6 @@
 class String
   attr_reader :used
-  @@greetings = ["ALSO I JUST MADE A HILARIOUS JOKE", "WAHOOOOO", "FUTURISTIC SHIT!!!!!!!", "WTF THIS LOOKS AWESOME", 
+    GREETINGS = ["ALSO I JUST MADE A HILARIOUS JOKE", "WAHOOOOO", "FUTURISTIC SHIT!!!!!!!", "WTF THIS LOOKS AWESOME", 
                  "WHADDUP", "YEAAAAAH???", "LOL", "OMGOMGOMGOMG", "IS THERE ANY WAY WE CAN GHOST RIDE THE WHIP THIS WEEKEND",
                  "Dis is crazy", "LOLOLOLOL OMG I JUST DIED", 
                  "I'M STILL SO EXCITED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
@@ -9,14 +9,14 @@ class String
                   "yo can you double check for me that you can't see that i've been listening to one direction on repeat on spotify...
 i need to know private sess is working"]
 
-  @@endings = ["DONT YOU LOVE ME!!!", "OMG WHAT IS THIS", "lolololz",
+  ENDINGS = ["DONT YOU LOVE ME!!!", "OMG WHAT IS THIS", "lolololz",
                "I FELL LIKE I HAVENT SEEN YOU IN 5EVAH", 
                 "FUCK YOU BABY BUSTER", "THIS IS STAN\nBUT ACTUALLY THIS IS AILEEN",
                 "OKAY BYE BITCHES", "you're welcome you lazy fucks\n<3<3<3<3  ;)", "I BE DRANKIN", 
                 "ughhhhhhhUGHHHHHHH I'M ACTUALLY DOING WORK", "THIS SUCKS COME BACK TO MEEEEEEE",
                 "there's only one condition in which i would not love you. AND THAT'S IF YOU GOT FISH ARMS"]
 
-  @@lols = [" DA FUCK!", " ALSO,", " OMG", " OMGGGGGGG", " LOLLERZZZ", " WTF!!", " I LOLLED AT MYSELF FOR LIKE 5 MIN",
+  LOLS = [" DA FUCK!", " ALSO,", " OMG", " OMGGGGGGG", " LOLLERZZZ", " WTF!!", " I LOLLED AT MYSELF FOR LIKE 5 MIN",
             " FUUUUUUUUCK", " LOLOLOLOLOLOL HAHAHAHHAHAHAHAHAHAHAHAHA", " wtfffffff", " fuuuuuuuuuck", " HAHAHAHAHA",
              " (all I want to do is lay in my bed and EAT THAI FOOD)", " lolled so hard in the bathroom (yea i check my emails while i pee)", 
              " lulllz", " LOLOLOLOLZ", "LOLOLOL I lolled so fucking hard at that", "AND IF THAT WAS SO THEN I AM REAL EMBARRASSED COS I HAD SOME WEIRD THOUGHTS IN THAT PANERA.", "I DIE I DIE"]
@@ -51,7 +51,7 @@ i need to know private sess is working"]
     sentences = self.split(/(?<=!)(?=\s)/)
     num = rand(1..sentences.size)
     num.times do
-      sentences[rand(num-1)] << pick(@@lols, used)
+      sentences[rand(num-1)] << pick(LOLS, used)
     end
     sentences.join
   end
@@ -62,7 +62,7 @@ i need to know private sess is working"]
   end
 
   def wrap_it
-    "#{@@greetings.sample}\n#{self}\n#{@@endings.sample}"
+    "#{GREETINGS.sample}\n#{self}\n#{ENDINGS.sample}"
   end
 
   def array_it
