@@ -4,16 +4,22 @@ class String
                  "WHADDUP", "YEAAAAAH???", "LOL", "OMGOMGOMGOMG", "IS THERE ANY WAY WE CAN GHOST RIDE THE WHIP THIS WEEKEND",
                  "Dis is crazy", "LOLOLOLOL OMG I JUST DIED", 
                  "I'M STILL SO EXCITED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-                  "CANNOT WAIT"]
+                  "CANNOT WAIT", "COME BACCCKKK", "I'm reading this print out I made of 'of mice and men' and pretending it's the worksheet at the meeting hehehe", "WAKEY WAKEY!!!!", 
+                  "WHAT!!!! SO LAME!! I thought we were in friend love!!!!!", 
+                  "yo can you double check for me that you can't see that i've been listening to one direction on repeat on spotify...
+i need to know private sess is working"]
 
   @@endings = ["DONT YOU LOVE ME!!!", "OMG WHAT IS THIS", "lolololz",
                "I FELL LIKE I HAVENT SEEN YOU IN 5EVAH", 
                 "FUCK YOU BABY BUSTER", "THIS IS STAN\nBUT ACTUALLY THIS IS AILEEN",
-                "OKAY BYE BITCHES", "you're welcome you lazy fucks\n<3<3<3<3  ;)"]
+                "OKAY BYE BITCHES", "you're welcome you lazy fucks\n<3<3<3<3  ;)", "I BE DRANKIN", 
+                "ughhhhhhhUGHHHHHHH I'M ACTUALLY DOING WORK", "THIS SUCKS COME BACK TO MEEEEEEE",
+                "there's only one condition in which i would not love you. AND THAT'S IF YOU GOT FISH ARMS"]
 
   @@lols = [" DA FUCK!", " ALSO,", " OMG", " OMGGGGGGG", " LOLLERZZZ", " WTF!!", " I LOLLED AT MYSELF FOR LIKE 5 MIN",
             " FUUUUUUUUCK", " LOLOLOLOLOLOL HAHAHAHHAHAHAHAHAHAHAHAHA", " wtfffffff", " fuuuuuuuuuck", " HAHAHAHAHA",
-             " (all I want to do is lay in my bed and EAT THAI FOOD)", " lolled so hard in the bathroom (yea i check my emails while i pee)", " lulllz"]
+             " (all I want to do is lay in my bed and EAT THAI FOOD)", " lolled so hard in the bathroom (yea i check my emails while i pee)", 
+             " lulllz", " LOLOLOLOLZ", "LOLOLOL I lolled so fucking hard at that", "AND IF THAT WAS SO THEN I AM REAL EMBARRASSED COS I HAD SOME WEIRD THOUGHTS IN THAT PANERA.", "I DIE I DIE"]
 
   def pick(array, used)
     my_choice = array.sample
