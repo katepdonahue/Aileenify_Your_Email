@@ -23,9 +23,9 @@ class Scraper
   end
 
   def get_gif
-    gifs = html.search(".featured-tags img")
-    if gifs && gifs[rand(4)] && gifs[rand(4)]["src"]
-      gifs[rand(4)]["src"]
+    gifs = html.search(".gifs-gif")
+    if gifs && gifs[rand(gifs.length)] && gifs[rand(gifs.length)]["data-animated"]
+      gifs[rand(gifs.length)]["data-animated"]
     end 
   end
 
