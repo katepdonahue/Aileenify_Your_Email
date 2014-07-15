@@ -11,7 +11,11 @@ class Scraper
   def get_link
     links = []
     html.search("article").map do |element|
-      link = element.search("h2 a").first["href"]
+      link = element.search("h2 a")
+      if link
+        link = link.first
+        link = link["href"] if link
+      end
       next if link.nil?
       links << link
     end
@@ -19,7 +23,10 @@ class Scraper
   end
 
   def get_gif
-    html.search(".featured-tags img")[rand(4)]["src"]
+    gifs = html.search(".featured-tags img")
+    if gifs && gifs[rand(4)] && gifs[rand(4)]["src"]
+      gifs[rand(4)]["src"]
+    end 
   end
 
 end
